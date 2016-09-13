@@ -1,0 +1,33 @@
+
+ <div class="container">
+          
+  <div>
+    <table >
+      <tr>
+      <th style="color:#0000FF;padding:10px 25px 10px 25px;"><a href="#/player"> Test team </a></th> 
+      <th style="color:#0000FF;padding:10px 25px 10px 25px;"><a href="#/odiTeam"> ODI team </a></th>  
+      <th style="color:#0000FF;padding:10px 25px 10px 25px;"><a href="#/t20Team"> T20 team </a> </th>
+         </tr>
+      
+     </table>
+    
+   <div class="panel-body" > 
+    
+    <table>
+    <tbody>
+      <tr ng-repeat="player in playersList">
+      
+        <td>{{$index + 1}}</td>
+        <td style="padding:10px 25px 10px 25px;">
+          <a href="#">
+          {{ player.Player.givenName }}&nbsp; {{player.Player.familyName}}
+          </a>
+        </td>
+        <td style="padding:10px 25px 10px 25px;">{{player.post}}</td>
+        <td style="padding:10px 25px 10px 25px;">{{player.SR}}</td>
+      </tr>
+     </tbody>
+    </table>
+   
+  </div>
+  </div>

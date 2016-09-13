@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html ng-app="SportsApp">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Indian Sports</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="app/css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="app/css/dropdown.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="app/js/dropdown.js"></script>
+  <!--   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+	  
+</head>
+<body>
+<div id="content">
+<div id="back">
+
+<!-- header begins -->
+<div id="header"> 
+	<div id="menu">
+		<ul>
+			<li id="button1"><a href="#"  title="">Home</a></li>
+			<li id="button2"><a href="#" title="">Blog</a></li>
+			<li id="button3"><a href="#" title="">Gallery</a></li>
+			<li id="button4"><a href="#" title="">About</a></li>
+			<li id="button5"><a href="#" title="">Contact</a></li>
+		</ul>
+    </div>
+	<div id="logo">
+		<h1><a href="#">Indian Sports Club</a></h1>
+		<h2><a href="http://www.metamorphozis.com/" id="metamorph">Get every sports news</a></h2>
+	</div>  
+</div>
+
+<!-- header ends -->
+<!-- content begins -->
+ <div id="main">
+	<div id="right">			
+			<h3>Live Updates</h3>
+			<ul>
+			  <li>
+				  <h4>Live Cricket Scores</h4>
+				  <a href="#liveScore"> Live Scores &#8230;</a></h3></li>
+				   <li>
+				  <h4>June 12, 2008</h4>
+				  <p><a href="#">Tempus Duis tempor posuere diam. Suspendisse vel tellus quis nunc malesuada porta. &#8230;</a></p></li>
+				  <li>
+				  <h4>June 23, 2008</h4>
+				  <p><a href="#">Tempus in, lacus. Duis tempor uspendisse vel tellus quis nunc malesuada porta. &#8230;</a></p></li>
+				   <li><h4>June 25, 2008</h4>
+				  <p><a href="#">Tempus in, lacus. Duis tempor posuere diam. Suspendisse vel tellus quis nunc malesuada porta. &#8230;</a></p></li>		  
+				  </ul>
+		
+			<br />
+	</div>
+	<div id="left">		
+		<h2>Welcome To Indian Sports Club</h2><br />
+		
+			<!--<table>
+			<tr> <th colspan="2"> Select Sports: &nbsp;</th>
+			<th> 
+			<div class="container">
+  
+				  <div class="dropdown">
+				    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select here
+				    <span class="caret"></span></button>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#player">Cricket</a></li>
+				      
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#football">Football</a></li>
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hockey</a></li>
+				      <li role="presentation" class="divider"></li>
+				      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+				    </ul>
+				  </div>
+				</div>
+           </th>
+           </tr>
+         </table>-->
+
+     <div id="container" style="margin-top:40px;" id="left">
+	
+	<!-- First Menu Start -->
+	<ul class="ul">
+		<li><a href="#" class="dropdown">Sport Menu</a></li>
+		
+		<li class="sublinks">
+			<a href="#player">Cricket</a>
+			<a href="#football">Football</a>
+			<a href="#Hockey">Hockey</a>
+			<a href="#">Womans Cricket</a>
+			<a href="#">Other</a>
+		</li>
+		
+	</ul>
+	<!-- First Menu End -->
+    <br/>
+    <br/>
+     <!-- partial view body -->
+	</div>
+          <div ng-view></div>
+	</div>
+<!--content ends -->
+<!--footer begins -->
+	</div>
+
+<div id="footer">
+<p>Copyright &copy; 2008. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a></p> 
+	<p><a href="http://freetemplates.dezinehub.com">Template</a> <a href="http://www.maadesigns.co.uk">Design</a> by <a href="http://www.metamorphozis.com/" title="Flash Templates">Flash Templates</a>, coded by <a href="http://www.flashtemplatesdesign.com" title="Free Flash Templates">Free Flash Templates</a>		</p>
+	</div>
+</div>
+</div>
+<!-- footer ends-->
+</body>
+
+  <script src="app/bower_components/angular.min.js"></script>
+  <script src="app/bower_components/angular-route.min.js"></script>
+  <script src="app/js/app.js"></script>
+  <script src="app/js/controllers.js"></script>
+  <script src="app/js/services.js"></script>
+</html>

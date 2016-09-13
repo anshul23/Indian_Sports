@@ -1,0 +1,21 @@
+<table>
+    <thead>
+      <th></th>
+      <th style="padding:10px 25px 10px 25px;">Player</th> 
+      <th style="padding:10px 25px 10px 25px;">Role</th> 
+      <th style="padding:10px 25px 10px 25px;">Goals</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="player in playersList">
+      
+        <td>{{$index + 1}}</td>
+        <td style="padding:10px 25px 10px 25px;">
+          <a href="#">
+          {{ player.Player.givenName }}&nbsp; {{player.Player.familyName}}
+          </a>
+        </td>
+        <td style="padding:10px 25px 10px 25px;">{{player.role}}</td>
+        <td style="padding:10px 25px 10px 25px;">{{player.Goals}}</td>
+      </tr>
+     </tbody>
+    </table>
